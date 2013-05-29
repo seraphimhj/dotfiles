@@ -25,6 +25,7 @@ defaults write NSGlobalDomain KeyRepeat -int 0
 # Set the Finder prefs for showing a few different volumes on the Desktop.
 defaults write com.apple.finder ShowExternalHardDrivesOnDesktop -bool true
 defaults write com.apple.finder ShowRemovableMediaOnDesktop -bool true
+defaults write com.apple.finder AppleShowAllFiles -bool true
 
 # Run the screensaver if we're in the bottom-left hot corner.
 defaults write com.apple.dock wvous-bl-corner -int 5
@@ -39,3 +40,5 @@ defaults write com.apple.Safari IncludeDevelopMenu -bool true
 defaults write com.apple.Safari WebKitDeveloperExtrasEnabledPreferenceKey -bool true
 defaults write com.apple.Safari "com.apple.Safari.ContentPageGroupIdentifier.WebKit2DeveloperExtrasEnabled" -bool true
 defaults write NSGlobalDomain WebKitDeveloperExtras -bool true
+
+
