@@ -1,0 +1,11 @@
+#!/usr/bin/expect
+set timeout 60
+spawn ssh -D 7070 -p 22111 -g apple@106.187.36.177
+expect {
+"password:" {
+send "sniper\n\r"
+}
+}
+interact {
+timeout 600 { send " "}
+}
